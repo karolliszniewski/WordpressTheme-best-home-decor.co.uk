@@ -36,6 +36,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "src/index.html", to: "index.html" },
+        { from: "src/inc/media", to: "inc/media" },
         ],
     }),
     new MiniCssExtractPlugin({
