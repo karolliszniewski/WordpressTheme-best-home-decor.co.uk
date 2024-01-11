@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
 //colors
 $white: #FCFCFC;
 $lightGrey: #E2E2E2;
@@ -9,18 +12,46 @@ $DarkBlue:#121330;
     box-sizing:border-box;
     margin:0;
     padding:0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 body{
-    background:$LightBlue;
+    background:$white;
     
     .navbar {
         display:flex;
         width:100%;
         justify-content:space-between;
-        padding:0 2rem;
+       
         
-        background:$DarkBlue
+        background:$DarkBlue;
+
+        &__toggle{
+            color:$white;
+            font-size:2.75rem;
+            padding:1rem 1rem 1rem 1rem;
+           
+        }
+
+        &__logo{
+            color:$white;
+            font-size:2.75rem;
+            padding:1rem 0 1rem 0;
+            
+            span{
+                color:$LightBlue;
+                font-weight:700;
+            }
+        }
+
+        &__account{
+            color:$white;
+            font-size:2.75rem;
+            padding:1rem 1rem 1rem 1rem;
+   
+        }
+
+
     }
 }

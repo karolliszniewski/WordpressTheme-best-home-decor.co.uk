@@ -1,2 +1,2 @@
-*{box-sizing:border-box;margin:0;padding:0}body{background:#4386fd}body .navbar{display:flex;width:100%;justify-content:space-between;padding:0 2rem;background:#121330}
+@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";*{box-sizing:border-box;margin:0;padding:0;font-family:"Roboto",sans-serif}body{background:#fcfcfc}body .navbar{display:flex;width:100%;justify-content:space-between;background:#121330}body .navbar__toggle{color:#fcfcfc;font-size:2.75rem;padding:1rem 1rem 1rem 1rem}body .navbar__logo{color:#fcfcfc;font-size:2.75rem;padding:1rem 0 1rem 0}body .navbar__logo span{color:#4386fd;font-weight:700}body .navbar__account{color:#fcfcfc;font-size:2.75rem;padding:1rem 1rem 1rem 1rem}
 /*# sourceMappingURL=index.min.css.map */
