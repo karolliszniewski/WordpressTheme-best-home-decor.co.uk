@@ -49,3 +49,15 @@ In this release (version 1.1), I've implemented a responsive mobile menu that se
 ![Mobile Menu Preview](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/6c1e2ca9-c14b-4458-acbc-25b5e532e123)
 
 ![image](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/37014610-3e0d-4294-a40f-278a3e4f84aa)
+
+
+# Progress 1.2 Update
+
+In this update (Progress 1.2), I've incorporated WordPress theme files into the primary project folder named 'speed.' The theme is built using the singleton design pattern, featuring an autoloader and namespaces.
+
+---
+
+**Design Pattern:**
+- Singleton
+- Autoloader
+- Namespaces
