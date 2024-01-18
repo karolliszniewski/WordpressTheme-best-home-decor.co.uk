@@ -35,3 +35,17 @@ Start by implementing the basic design for the blog page, as outlined in the [Fi
 Incorporate icons from the Google Fonts library and set the background and text to create a distinctive logo.
 
 ![Icons and Logo](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/72c8f136-f960-4c61-b786-1b1732bb5bc8)
+
+
+## Progress 1.1 - Mobile Menu Responsiveness
+
+### Overview
+In this release (version 1.1), I've implemented a responsive mobile menu that seamlessly adapts to both mobile and desktop versions of the website. The mobile menu is designed to either automatically enable on smaller screens or trigger when the screen size exceeds 1000px.
+
+### Features
+- **Mobile Menu Responsiveness:** The mobile menu is optimized for a smooth user experience on various devices, ensuring functionality on both mobile and desktop platforms.
+
+### Preview
+![Mobile Menu Preview](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/6c1e2ca9-c14b-4458-acbc-25b5e532e123)
+
+![image](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/37014610-3e0d-4294-a40f-278a3e4f84aa)
