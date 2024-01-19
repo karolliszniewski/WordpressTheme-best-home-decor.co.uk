@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php echo get_the_title(); ?></title>
-  <?php HASTE_THEME::add_custom_head(); ?>
+  <?php ACTIONS::add_custom_head(); ?>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
               />
             </svg>
           </span>
-          <div class="menu__logo"><span>Go</span>Best</div>
+          <div class="menu__logo"><a class="menu__home" href="<?php echo esc_url(home_url())  ?>"><span>Go</span>Best</a></div>
 
           <nav class="navigation">
             <header class="navigation__header">

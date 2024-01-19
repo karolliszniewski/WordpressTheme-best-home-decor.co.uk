@@ -4,15 +4,10 @@ get_template_part('template-parts/header');
 ?>
 
 <main class="main">
-<nav class="category">
-<?php
-$categories = get_the_category();
-print_r($categories);
-?>
 
-</nav>
-
-
+<header class="main__header">
+Archive.php
+</header>
 </main>
 
 

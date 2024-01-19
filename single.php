@@ -4,15 +4,12 @@ get_template_part('template-parts/header');
 ?>
 
 <main class="main">
-<nav class="category">
+
+<header class="main__header">
 <?php
-$categories = get_the_category();
-print_r($categories);
+COMPONENT_BLOG::category();
 ?>
-
-</nav>
-
-
+</header>
 </main>
 
 

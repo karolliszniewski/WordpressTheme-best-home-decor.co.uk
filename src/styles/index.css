@@ -5,6 +5,12 @@
   src: url("../inc/fonts/roboto-regular-webfont.woff2") format("woff2"), url("../inc/fonts/roboto-regular-webfont.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../inc/fonts/roboto-bold-webfont.woff2") format("woff2"), url("../inc/fonts/roboto-bold-webfont.woff") format("woff");
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -227,5 +233,32 @@ body .overlay {
   .navigation__link {
     color: #FCFCFC;
   }
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.3rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.main__header {
+  width: 100%;
+}
+.main__header .category__list {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #E2E2E2;
+  width: 100%;
+}
+.main__header .category__link {
+  color: #737385;
+  text-decoration: none;
+  padding-right: 0.5rem;
+  font-size: 0.6rem;
+}
+.main__header .category__divider {
+  padding-right: 0.5rem;
+  color: #737385;
 }
 /*# sourceMappingURL=index.css.map */
