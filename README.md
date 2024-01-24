@@ -66,7 +66,7 @@ In this update (Progress 1.2), I've incorporated WordPress theme files into the 
 
 # Progress 1.3 Update
 
-In the recent update for Project X, I've implemented several significant changes:
+In the recent update, I've implemented several significant changes:
 
 1. **Introduction of Simple API:** The project now features a straightforward API that sends me information when someone clicks on a link.
 
