@@ -1,0 +1,30 @@
+
+
+@import "./colors";
+@import "./mixins";
+
+.wc-block-components-notice-banner{
+    background-color:$GreenSuccess;
+    margin:1rem;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    min-height:4rem;
+    padding:.2rem;
+
+    .wc-block-components-notice-banner__content{
+        a{
+            display:inline-block;
+            text-decoration: none;
+            color:$white;
+            padding:.5rem 1.5rem;
+            margin:.5rem;
+            background-color: $DarkBlue;
+            transition:color .3s ease-in-out;
+
+            &:hover{
+               color:$LightBlue;
+            }
+        }
+    }
+}

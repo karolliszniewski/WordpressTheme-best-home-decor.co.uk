@@ -78,3 +78,53 @@ In the recent update, I've implemented several significant changes:
    ![Screenshot 2024-01-24 182333](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/8b19370d-a26f-43c4-95cf-aa7def0a65a8)
    ![Screenshot 2024-01-24 182342](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/77c08709-7361-460d-aa80-391166caf59c)
    ![Screenshot 2024-01-24 182355](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/74953f05-fe3c-4644-aa9d-d6a816df1104)
+
+
+# Progres 1.4 - Single Product, Product Archive, My Account
+
+**Note:** There are some bugs in the mobile version images because the Chrome plugin to capture scrolled pages has some issues, but you can see that the design is fully responsive.
+
+## Single Product
+Additionally, there is a slider for images made in pure TypeScript without any other libraries. You can use arrows to slide left/right, but on mobile, you can also use touch. There is a zoom button that makes the image full-size on your screen except for 3rem on the top for navigation.
+
+**Desktop:**
+
+![Single Product Desktop](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/4fe4c1f6-f8e5-4104-a883-770b1424976f)
+
+**Mobile:**
+
+![Single Product Mobile](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/3dcc2efd-02d5-44e5-9a7e-0786da9aac36)
+
+## Product Archive
+**Desktop:**
+
+![Product Archive Desktop](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/d2b110a3-d427-4f7e-a10d-1988ea224b8d)
+
+**Mobile:**
+
+![Product Archive Mobile](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/bf52ec3b-d211-459f-a90f-e97bc6f0dcdb)
+
+## My Account
+**Desktop:**
+
+![My Account Desktop](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/16285a8b-0e3a-4e2b-9f3c-655b01023f07)
+
+**Mobile:**
+
+![My Account Mobile](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/047c8eae-ea45-4968-acba-9fd47b4e5d8e)
+
+## My Account / Edit Address
+**Desktop:**
+
+![My Account / Edit Address Desktop 1](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/168eae91-0c8e-48ce-84db-a79bf4e17f29)
+![My Account / Edit Address Desktop 2](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/31903c1c-a760-4939-96da-dc480f69e2bd)
+
+**Mobile:**
+
+![My Account / Edit Address Mobile 1](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/2a1c7444-2b1e-4bc3-b8c9-769e508f6308)
+![My Account / Edit Address Mobile 2](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/53486ce1-90a0-4eed-a489-2804d2fe83e3)
+
+
+
+
+

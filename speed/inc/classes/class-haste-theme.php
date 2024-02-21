@@ -20,6 +20,7 @@
         Customwalker::get_instance();
           
         $this->setup_hooks();
+      
 
     }
 
@@ -37,19 +38,7 @@
     public function setup_theme(){
         // just placeholder no real use case for now
 
-        add_theme_support('title-tag');
-        add_theme_support('custom-logo',[
-        'height'               => 100,
-		'width'                => 400,
-		'flex-height'          => true,
-		'flex-width'           => true,
-		'header-text'          => array( 'site-title', 'site-description' ),
-		'unlink-homepage-logo' => true]);
-        
-        $args = array(
-           
-        );
-
+        add_theme_support('woocommerce');
 
     }
 

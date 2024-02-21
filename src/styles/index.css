@@ -18,9 +18,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  width: auto;
+  padding: 0 0.5rem;
+  height: 2rem;
+  border: none;
+  background-color: #121330;
+  color: #FCFCFC;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(90%);
+}
+
 body {
   background: #FCFCFC;
-  height: 200rem;
+  position: relative;
 }
 body .header {
   position: fixed;
@@ -71,6 +84,10 @@ body .overlay {
 .container .menu__logo span {
   color: #4386FD;
   font-weight: 700;
+}
+.container .menu__home {
+  text-decoration: none;
+  color: #FCFCFC;
 }
 .container .menu__account {
   padding: 0 0.5rem;
@@ -236,29 +253,198 @@ body .overlay {
 }
 .main {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 0.3rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
 }
 .main__header {
   width: 100%;
 }
+.main__header .category {
+  height: 3rem;
+}
 .main__header .category__list {
   display: flex;
   list-style: none;
   border-bottom: 1px solid #E2E2E2;
   width: 100%;
+  height: 100%;
+}
+.main__header .category__item {
+  height: 100%;
 }
 .main__header .category__link {
+  display: inline-block;
+  height: 3rem;
   color: #737385;
   text-decoration: none;
   padding-right: 0.5rem;
   font-size: 0.6rem;
+  overflow: hidden;
+  line-height: 3rem;
 }
 .main__header .category__divider {
   padding-right: 0.5rem;
   color: #737385;
+  line-height: 2.85rem;
+}
+.main__title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+  min-height: 2.125rem;
+}
+.main__title-text {
+  font-size: 1.125rem;
+}
+.main__extras {
+  display: flex;
+  justify-content: space-between;
+  height: 1.8rem;
+}
+.main__extras .extras__share {
+  display: flex;
+  align-items: center;
+}
+.main__extras .extras__share svg {
+  transform: translateY(7%);
+}
+.main__extras .extras__date {
+  font-size: 0.5rem;
+  color: #737385;
+  display: flex;
+  align-items: center;
+}
+.main__image {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  display: flex;
+}
+.main__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+.main__introduction {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.main .card__title {
+  font-size: 1.5rem;
+}
+.main .card .youtube {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 700px) {
+  .main .card .youtube {
+    height: 20rem;
+  }
+}
+.main .card .youtube__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.main .card .youtube__image {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+.main .card__score {
+  font-size: 0.8rem;
+  color: #333333;
+}
+.main .card__availability {
+  padding: 1rem 0;
+}
+.main .card__table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+}
+.main .card__table th, .main .card__table td {
+  border: 1px solid black; /* pojedyncze obramowanie komórek o grubości 1 piksela */
+  padding: 8px; /* opcjonalne - dodaje odstęp wewnątrz komórek */
+  text-align: center;
+}
+.main .card__affiliate {
+  background: #cd001b;
+  color: #FCFCFC;
+  display: inline-block;
+  height: 2.5rem;
+  width: 16rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: transform 0.3s ease-out, filter 0.3s ease-out;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.main .card__affiliate:hover {
+  filter: brightness(130%);
+}
+.main .card__affiliate:active {
+  transform: scale(0.98);
+  filter: brightness(130%);
+}
+.main .card__ad {
+  background-color: #edf3ff;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main .card__ad h3 {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.main .card__ad p {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.main .card__nordvpn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #cd001b;
+  color: #fff;
+  height: 4rem;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.main .card__nordvpn:hover {
+  transform: scale(0.98);
+}
+.main .card__nordvpn:active {
+  transform: scale(0.98);
+  filter: brightness(80%);
 }
 /*# sourceMappingURL=index.css.map */

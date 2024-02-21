@@ -58,7 +58,7 @@ dropdownTriggers.forEach(function (dropdownTrigger) {
     });
 
 
-    dropdownTrigger.addEventListener('click', function () {
+    dropdownTrigger.addEventListener('touchstart', function () {
      
       
       dropdownMenu.classList.toggle('active');

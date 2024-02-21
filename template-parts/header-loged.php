@@ -14,7 +14,7 @@
 <meta property="og:description" content="<?php echo esc_attr(get_the_excerpt()); ?>" />
 <meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>" />
 <meta property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" />
-
+<?php wp_head() ?>
 
   <title><?php echo get_the_title(); ?></title>
   <?php ACTIONS::add_custom_head(); ?>
