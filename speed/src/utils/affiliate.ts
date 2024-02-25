@@ -1,8 +1,8 @@
 
-const affiliateElements2 = document.querySelectorAll('.card__affiliate');
+const affiliateElements = document.querySelectorAll('.card__affiliate');
 
 
-affiliateElements2.forEach(element => {
+affiliateElements.forEach(element => {
   
     element.addEventListener('click', function() {
         
@@ -28,7 +28,7 @@ affiliateElements2.forEach(element => {
         })
             .then(response => response.json())
             .then(data => console.log(data))
-            .catch(error => console.error('Error:', error));
+            .catch(error => console.error('Błąd:', error));
 
 
         const newDiv = document.createElement('div');

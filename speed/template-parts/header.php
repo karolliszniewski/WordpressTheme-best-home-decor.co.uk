@@ -1,12 +1,21 @@
 <?php  namespace HASTE\Inc;
+
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo esc_attr(get_bloginfo('language')) ?> ">
 
 <head>
-
-  <meta charset="UTF-8" />
+  <meta charset="<?php bloginfo('charset') ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="<?php echo esc_attr(get_the_excerpt()); ?>" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="<?php echo esc_url(get_permalink()); ?>" />
+  <meta property="og:title" content="<?php echo get_the_title(); ?>" />
+<meta property="og:description" content="<?php echo esc_attr(get_the_excerpt()); ?>" />
+<meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>" />
+<meta property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" />
+
+
   <title><?php echo get_the_title(); ?></title>
   <?php ACTIONS::add_custom_head(); ?>
 </head>
@@ -35,7 +44,7 @@
             <header class="navigation__header">
               <div class="navigation__home">
                 <span
-                  ><a href="#">
+                  ><a href="<?php echo esc_url(home_url())  ?>">
                     <svg
                       class="responsiveFlyoutMenu_homeIcon responsiveFlyoutMenu_homeIconFill responsiveFlyoutMenu_homeIcon-level"
                       width="24"
@@ -68,7 +77,7 @@
             </header>
   <?php
   wp_nav_menu(array(
-    'theme_location' => 'custom-menu',
+    'theme_location' => 'main-navigation',
     'menu_class' => 'navigation__list',
     'container' => '',
     'walker' => new Customwalker(),
@@ -80,6 +89,8 @@
 </nav>
 
 <span class="menu__account">
+  <a href=" <?php echo esc_url(home_url().'/my-account/')  ?>
+  ">
   <svg
     width="40"
     height="40"
@@ -92,6 +103,7 @@
       fill="#FCFCFC"
     />
   </svg>
+  </a>
 </span>
 </div>
 </div>

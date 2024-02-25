@@ -688,15 +688,18 @@ img{
 
     .wc-block-components-notice-banner{
         display:flex;
-        height:2rem;
+        min-height:2rem;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         .wc-block-components-notice-banner__content{
             color:$Black;
+            line-height:1.5;
 
-            a{
-                color:$Black;
+            a{  
+                display:inline-block;
+                color:$white;
+                text-decoration: none !important;
                 
             }
         }

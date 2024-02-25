@@ -38,7 +38,7 @@
     public function setup_theme(){
         // just placeholder no real use case for now
 
-    
+        add_theme_support('woocommerce');
 
     }
 

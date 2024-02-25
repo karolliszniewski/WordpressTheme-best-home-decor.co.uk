@@ -7,6 +7,7 @@ import './utils/toggle';
 import './utils/youtube';
 import './utils/affiliate';
 import './utils/slider';
+import './utils/cart';
 
 
 

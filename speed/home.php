@@ -21,12 +21,12 @@ if (have_posts()) : // Sprawdz, czy sa dostepne wpisy
         ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <?php the_content(); ?>
+       
         </article>
         <?php
     endwhile;
 else :
-    echo '<p>Brak wpisów do wyswietlenia.</p>';
+    echo '<p>Brak wpisï¿½w do wyswietlenia.</p>';
 endif;
 
 ?>
