@@ -121,6 +121,6 @@ Additionally, there is a slider for images made in pure TypeScript without any o
 ![image](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/87957a8d-5990-49fc-bf9f-4d155b7f6832)
 
 
-**Navigation update(Basket, Search):**
+**Progress 1.5 - Navigation update(Basket, Search):**
 
 ![chrome-capture-2024-3-2](https://github.com/karolliszniewski/WordpressTheme-best-home-decor.co.uk/assets/105976690/931c0e1a-f995-406f-a8e5-4d345364cf26)
