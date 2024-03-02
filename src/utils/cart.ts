@@ -1,7 +1,7 @@
 // minus buttons
 const minusQuantityElements: NodeListOf<HTMLElement> = document.querySelectorAll('.table__minus');
 const minusQuantity: HTMLElement[] | null = minusQuantityElements.length > 0 ? Array.from(minusQuantityElements) : null;
-
+console.log('click updatecart')
 // plus buttons
 const plusQuantityElements: NodeListOf<HTMLElement> = document.querySelectorAll('.table__plus');
 const plusQuantity: HTMLElement[] = plusQuantityElements.length > 0 ? Array.from(plusQuantityElements) : null;
@@ -21,8 +21,9 @@ console.log('here ok')
 
 
             //submit form after change (submit form doesnt work so submit button is used instead)
-            const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+            const submitButton = document.querySelector('#updatecart') as HTMLButtonElement | null;
             if (submitButton) {
+             
                 submitButton.click();
             }
 

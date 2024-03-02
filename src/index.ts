@@ -4,6 +4,7 @@ import "./styles/product-archive.scss"
 import "./styles/single-product.scss"
 import "./styles/cart.scss"
 import './utils/toggle';
+import './utils/search';
 import './utils/youtube';
 import './utils/affiliate';
 import './utils/slider';

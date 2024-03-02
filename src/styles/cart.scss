@@ -114,9 +114,12 @@ div{
         }
 
         &__name{
-            span{
+            a{
+                text-decoration: none;
+                color:$Black;
                 padding-left:.5rem;
-            }
+
+        }
             
         }
 

@@ -58,9 +58,9 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 		$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 		// image
 		?>
-		<div class="table__thumbnail"><?php echo $thumbnail ?></div>
+		<div class="table__thumbnail"><a href="<?= $product_permalink ?>"><?php echo $thumbnail ?></a></div>
 
-		<div class="table__name"><span><?= $product_name ?></span></div>
+		<div class="table__name"><a href="<?= $product_permalink ?>"><span><?= $product_name ?></span></a></div>
 
 		<?php
 		// price

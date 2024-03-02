@@ -2,7 +2,9 @@
 @import "./mixins";
 
 
-//font
+/**
+Fonts , navigation and other default styles
+**/
 
 @font-face {
     font-family: 'Roboto';
@@ -56,6 +58,51 @@ body{
         left:0;
         width:100%;
         z-index:1001;
+
+        .search{
+            background:$DarkBlue;
+            position:absolute;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:3rem;
+            transform:translateY(-8rem);
+            transition:transform .4s ease-in-out;
+            z-index:-1;
+
+            &.active{
+                transform: translateY(0);
+                z-index:2001;
+         
+            }
+
+            form{
+                height:inherit;
+                width:inherit;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    height:2rem;
+                    width:70%;
+                    border:none;
+                    outline:none;
+                    padding:0 .5rem;
+
+                    &:active{
+                        outline:none;
+                        
+                    }
+                }
+
+                button{
+                    background:$white;
+                    height:2rem;
+                    border:none;
+                }
+            }
+        }
     }
 
     .main{
@@ -75,7 +122,39 @@ body{
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1000;
+
+        &-search{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            z-index:2000;
+        }
+
+        &__close{
+  position:absolute;
+  background:$DarkBlue;
+  width:3rem;
+  height:3rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:-1;
+            &.active{
+                z-index:2001;
+            }
+
+
+        }
     }
+
+
+
+
     
 
 
@@ -93,6 +172,7 @@ body{
 
     position:relative;
     .menu{
+        
         background-color:$DarkBlue;
         height:3rem;
         display:flex;
@@ -100,7 +180,12 @@ body{
         justify-content: space-between;
         
        
-
+        &__home{
+            display:inline-block;
+            text-decoration: none;
+            color:$white;
+            height:100%;
+        }
         &__open{
             cursor: pointer;
             padding:0 .5rem;
@@ -126,44 +211,107 @@ body{
             }
         }
 
-        &__home{
-            text-decoration: none;
-            color:$white;
+        &__icons{
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+            width:20rem;
+            height:100%;
+            padding:0 .5rem;
+ 
+
+
+        }
+
+        &__woocommerce{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            width:3rem;
+
+        }
+        &__search{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:inherit;
+            cursor: pointer;
+            width:inherit;
         }
 
         &__account{
+            display:inline-block;
+            height:100%;
+            width:3rem;
 
-            padding:0 .5rem;
+            a{
+                display: flex;
+                height:inherit;
+                width:inherit;
+                justify-content: center;
+                align-items: center;
+            }
+         
+            
             
    
+        }
+
+        &__basket{
+            display:inline-block;
+            height:100%;
+            width:3rem;
+            position:relative;
+            a{
+                display: flex;
+                height:inherit;
+                width:inherit;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__quantity{
+            position:absolute;
+            height:.8rem;
+            min-width:.8rem;
+            border-radius:.4rem;
+            left:1.75rem;
+            bottom:1.8rem;
+            font-size:.7rem;
+            font-weight: 700;
+            color:$DarkBlue;
+            background:$white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
 
 
 .navigation{
-
-
-    &.active{
-       
-        transform: translate(0);
-        opacity:100;
-    }
-
     transform: translateX(-100%);
     opacity:0;
-    
     transition: transform .5s ease, opacity .5s ease;
     position:fixed;
     width: 72%;
     left:0;
     top:0;
-    z-index:1000;
-
+   
     background:$white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-    overflow: hidden;
+     overflow: hidden;
+    list-style:none;
+
+    &.active{
+        z-index:1000;
+        transform: translate(0);
+        opacity:100;
+    }
+
+
    
     &__header{
         height:3rem;
@@ -228,10 +376,10 @@ body{
                 content: "";
                 position: absolute;
                 top: 1.5rem;
-                right: 10px; /* Dostosuj margines z prawej strony według potrzeb */
+                right: 10px;
                 transform: translateY(-50%);
-                width: 7px; /* Szerokość ikony SVG */
-                height: 12px; /* Wysokość ikony SVG */
+                width: 7px;
+                height: 12px;
                 background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" fill="none"><path d="M0.310934 10.0588L4.43546 5.93432L0.310934 1.80979C-0.103645 1.39522 -0.103645 0.725513 0.310934 0.310934C0.725513 -0.103645 1.39522 -0.103645 1.80979 0.310934L6.68907 5.19021C7.10364 5.60478 7.10364 6.27449 6.68907 6.68907L1.80979 11.5683C1.39522 11.9829 0.725513 11.9829 0.310934 11.5683C-0.0930144 11.1538 -0.103645 10.4734 0.310934 10.0588Z" fill="black"/></svg>') no-repeat center center;
               }
 
@@ -268,7 +416,7 @@ body{
     }
 
    
-        list-style:none;
+       
         .navigation__link{
          
             padding-left:1.5rem;
@@ -313,20 +461,20 @@ body{
         &__open{
             display:none;
         }
+      
     }
 
 
     .navigation{
-        z-index:1001;
+    z-index:1001;
     transform:translate(0);
     opacity:100;
     position:static;
     display:flex;
-    width:80%;
     overflow: visible;
-   
     box-shadow: none;
-
+    width:auto;
+    justify-content: center;
     &__dropdown{
         position:absolute;
         background:$DarkBlue;
@@ -350,7 +498,7 @@ body{
         color:$white;
         box-shadow: none;
         z-index:2002;
-        width:100vw;
+      
        
 
     }
@@ -375,11 +523,10 @@ body{
         }
     }
 
-
-
     &__link{
         color:$white;
     }
+
     }
   }
 
